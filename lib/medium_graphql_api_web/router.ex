@@ -1,5 +1,4 @@
 defmodule MediumGraphqlApiWeb.Router do
-
   use MediumGraphqlApiWeb, :router
 
   pipeline :api do
@@ -7,7 +6,7 @@ defmodule MediumGraphqlApiWeb.Router do
   end
 
   scope "/", MediumGraphqlApiWeb do
-    get "/" , HelloController, :index
+    get "/", HelloController, :index
   end
 
   scope "/api", MediumGraphqlApiWeb do

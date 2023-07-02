@@ -2,7 +2,9 @@ defmodule MediumGraphqlApiWeb.ErrorJSONTest do
   use MediumGraphqlApiWeb.ConnCase, async: true
 
   test "renders 404" do
-    assert MediumGraphqlApiWeb.ErrorJSON.render("404.json", %{}) == %{errors: %{detail: "Not Found"}}
+    assert MediumGraphqlApiWeb.ErrorJSON.render("404.json", %{}) == %{
+             errors: %{detail: "Not Found"}
+           }
   end
 
   test "renders 500" do

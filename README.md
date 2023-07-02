@@ -17,6 +17,19 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   mix phx.new medium_graphql_api  --no-html --no-esbuild --no-live --no-tailwind
 ```
 
+2. Creating a new database 
+
+```bash
+  mix ecto.create
+```
+
+3. Creating a new context for Accounts
+
+```bash
+  mix phx.gen.context Accounts User users first_name last_name email password_hash role
+```
+
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/
